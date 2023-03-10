@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Web Player</title>
+        <link rel="stylesheet" href="spotify.css">
+    </head>
+    <body>
+        <header>
+            <svg id="backButton" width="64px" height="64px" viewBox="-102.4 -102.4 1228.80 1228.80" fill="#ffffff" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(102.39999999999998,102.39999999999998), scale(0.8)"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#000000" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M669.6 849.6c8.8 8 22.4 7.2 30.4-1.6s7.2-22.4-1.6-30.4l-309.6-280c-8-7.2-8-17.6 0-24.8l309.6-270.4c8.8-8 9.6-21.6 2.4-30.4-8-8.8-21.6-9.6-30.4-2.4L360.8 480.8c-27.2 24-28 64-0.8 88.8l309.6 280z" fill=""></path></g></svg>
+            <svg id="forwardButton" width="64px" height="64px" viewBox="-102.4 -102.4 1228.80 1228.80" fill="#ffffff" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(102.39999999999998,102.39999999999998), scale(0.8)"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#000000" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M669.6 849.6c8.8 8 22.4 7.2 30.4-1.6s7.2-22.4-1.6-30.4l-309.6-280c-8-7.2-8-17.6 0-24.8l309.6-270.4c8.8-8 9.6-21.6 2.4-30.4-8-8.8-21.6-9.6-30.4-2.4L360.8 480.8c-27.2 24-28 64-0.8 88.8l309.6 280z" fill=""></path></g></svg>
+            <a href="">Sign up</a>
+            <button>Log in</button>
+        </header>
+        
+        <nav>
+            <img id="spotifyLogo" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="The Spotify logo">
+            
+            <figure>
+                <svg class="navSvg" fill="#ffffff" width="64px" height="64px" viewBox="0 0 512.00 512.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00512"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="18.432"><polygon fill-rule="evenodd" points="192 0 0 153.6 0 384 149.333 384 149.333 256 234.667 256 234.667 384 384 384 384 153.6" transform="translate(64 64)"></polygon></g><g id="SVGRepo_iconCarrier"><polygon fill-rule="evenodd" points="192 0 0 153.6 0 384 149.333 384 149.333 256 234.667 256 234.667 384 384 384 384 153.6" transform="translate(64 64)"></polygon></g></svg>
+                <figcaption>Home</figcaption>
+            </figure>
+            <figure>
+                <svg class="navSvg" width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#fcfcfc" stroke-width="28.672000000000004"><path d="M448 768A320 320 0 1 0 448 128a320 320 0 0 0 0 640z m297.344-76.992l214.592 214.592-54.336 54.336-214.592-214.592a384 384 0 1 1 54.336-54.336z" fill="#ffffff"></path></g><g id="SVGRepo_iconCarrier"><path d="M448 768A320 320 0 1 0 448 128a320 320 0 0 0 0 640z m297.344-76.992l214.592 214.592-54.336 54.336-214.592-214.592a384 384 0 1 1 54.336-54.336z" fill="#ffffff"></path></g></svg>
+                <figcaption>Search</figcaption>
+            </figure>
+            <figure>
+                <svg class="navSvg" width="64px" height="64px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.072"></g><g id="SVGRepo_iconCarrier"> <title>library</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Combined-Shape" fill="#ffffff" transform="translate(42.666667, 85.333333)"> <path d="M3.55271368e-14,298.666667 L426.666667,298.666667 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,298.666667 Z M42.6666667,1.42108547e-14 L106.666667,1.42108547e-14 L106.666667,277.333333 L42.6666667,277.333333 L42.6666667,1.42108547e-14 Z M128,21.3333333 L192,21.3333333 L192,277.333333 L128,277.333333 L128,21.3333333 Z M288.933802,36.9522088 L351.961498,25.8387255 L399.909944,277.333333 L330.641827,277.70319 L288.933802,36.9522088 Z M213.333333,21.3333333 L277.333333,21.3333333 L277.333333,277.333333 L213.333333,277.333333 L213.333333,21.3333333 Z"> </path> </g> </g> </g></svg>
+                <figcaption>Your Library</figcaption>
+            </figure>
+            <figure>
+                <svg class="navSvg" fill="#000000" width="64px" height="64px" viewBox="-6.4 -6.4 76.80 76.80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-6.4" y="-6.4" width="76.80" height="76.80" rx="7.68" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect id="Icons" x="-896" y="-64" width="1280" height="800" style="fill:none;"></rect> <g id="Icons1" serif:id="Icons"> <g id="Strike"> </g> <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> </g> <g id="Pen"> </g> <g id="Pen1" serif:id="Pen"> </g> <g id="clock"> </g> <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> <path id="plus" d="M30.034,29.948l0,-21.983l3.741,0l0,21.983l22.203,0l0,3.741l-22.203,0l0,22.203l-3.741,0l0,-22.203l-22.008,0l0,-3.741l22.008,0Z"></path> <g id="vue"> </g> <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> <g id="react"> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" serif:id="coffee-bean"> </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" serif:id="coffee-bean"> </g> </g> <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g></svg>
+                <figcaption>Create Playlist</figcaption>
+            </figure>
+            <figure>
+                <img src="https://community.spotify.com/t5/image/serverpage/image-id/104727iC92B541DB372FBC7?v=v2" alt="liked song playlist logo" id="likedImg">
+                <figcaption>Liked Songs</figcaption>
+            </figure>
+
+            <div>
+                <span><a href="">Legal</a> <a href="">Privacy Center</a></span>
+                <span><a href="">Privacy Policy</a> <a href="">Cookies</a></span>
+                <span><a href="">About Ads</a></span>
+                <span><a href="">Your Privacy Choices</a></span>
+                <span><a href="">Cookies</a></span>
+            </div>
+            <button>
+                <svg width="64px" height="64px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>globe</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="icon" fill="#ffffff" transform="translate(42.666667, 42.666667)"> <path d="M213.333333,3.55271368e-14 C331.15408,3.55271368e-14 426.666667,95.5125867 426.666667,213.333333 C426.666667,331.15408 331.15408,426.666667 213.333333,426.666667 C95.5125867,426.666667 3.55271368e-14,331.15408 3.55271368e-14,213.333333 C3.55271368e-14,95.5125867 95.5125867,3.55271368e-14 213.333333,3.55271368e-14 Z M266.172298,234.667478 L160.494368,234.667478 C160.751768,240.206011 161.106447,245.657866 161.550763,251.010752 L161.550763,251.010752 L162.704606,262.937617 C162.921272,264.895577 163.149845,266.838175 163.389916,268.764752 L163.389916,268.764752 L164.965056,280.126708 C168.947083,306.164829 175.022606,328.805283 182.070301,346.244557 L182.070301,346.244557 L185.146993,353.394833 C194.014405,372.721908 204.079077,384 213.333333,384 C222.587589,384 232.652262,372.721908 241.519674,353.394833 L241.519674,353.394833 L244.596366,346.244557 C251.644061,328.805283 257.719584,306.164829 261.70161,280.126708 L261.70161,280.126708 L263.276751,268.764752 C263.516822,266.838175 263.745395,264.895577 263.962061,262.937617 L263.962061,262.937617 L265.115904,251.010752 C265.56022,245.657866 265.914899,240.206011 266.172298,234.667478 Z M117.754967,234.66677 L43.9872251,234.667936 C51.6157469,295.840065 91.6183169,346.958142 146.308509,370.33574 C138.57713,353.987478 132.247881,334.685279 127.499175,313.242562 L127.499175,313.242562 L125.162369,301.846285 C122.240964,286.402937 120.101888,269.989331 118.804978,252.881408 L118.804978,252.881408 L117.991138,239.924593 C117.903797,238.178165 117.825053,236.425465 117.754967,234.66677 Z M382.679442,234.667936 L308.91169,234.667013 C308.841606,236.425627 308.762866,238.178245 308.675529,239.924593 L308.675529,239.924593 L307.861688,252.881408 C306.564779,269.989331 304.425703,286.402937 301.504298,301.846285 L301.504298,301.846285 L299.167492,313.242562 C294.418786,334.685279 288.089536,353.987478 280.356624,370.333484 C335.048468,346.95799 375.050931,295.839974 382.679442,234.667936 Z M146.309622,56.3340705 L144.461776,57.1333159 C90.7190775,80.8641078 51.5294756,131.517428 43.9871834,191.999065 L117.754927,192.000892 C117.825024,190.241863 117.90378,188.488831 117.991138,186.742074 L117.991138,186.742074 L118.804978,173.785259 C120.101888,156.677336 122.240964,140.26373 125.162369,124.820381 L125.162369,124.820381 L127.499175,113.424105 C132.247795,91.9817764 138.576901,72.6798877 146.309622,56.3340705 Z M213.333333,42.6666667 L213.055465,42.6700469 C203.877904,42.8930334 193.925731,54.138029 185.146993,73.2718336 L185.146993,73.2718336 L182.070301,80.4221102 C175.022606,97.8613834 168.947083,120.501838 164.965056,146.539958 L164.965056,146.539958 L163.389916,157.901915 C163.149845,159.828492 162.921272,161.771089 162.704606,163.72905 L162.704606,163.72905 L161.550763,175.655914 C161.106447,181.008801 160.751768,186.460656 160.494368,191.999189 L266.172298,191.999189 C265.914899,186.460656 265.56022,181.008801 265.115904,175.655914 L265.115904,175.655914 L263.962061,163.72905 C263.745395,161.771089 263.516822,159.828492 263.276751,157.901915 L263.276751,157.901915 L261.70161,146.539958 C257.719584,120.501838 251.644061,97.8613834 244.596366,80.4221102 L244.596366,80.4221102 L241.519674,73.2718336 C232.652262,53.9447582 222.587589,42.6666667 213.333333,42.6666667 L213.333333,42.6666667 Z M280.358401,56.3310303 L281.002522,57.7124012 C288.442537,73.7611795 294.551675,92.5814462 299.167492,113.424105 L299.167492,113.424105 L301.504298,124.820381 C304.425703,140.26373 306.564779,156.677336 307.861688,173.785259 L307.861688,173.785259 L308.675529,186.742074 C308.762886,188.488831 308.841643,190.241863 308.911739,192.000892 L382.679483,191.999065 C375.051077,130.826878 335.048568,79.7087191 280.358401,56.3310303 Z" id="Combined-Shape"> </path> </g> </g> </g></svg>
+                <label>English</label>
+            </button>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Chill</h2>
+                <a href="">SHOW ALL</a>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+            </section>
+            <section>
+                <h2>Spotify Playlists</h2>
+                <a href="">SHOW ALL</a>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+            </section>
+            <section>
+                <h2>Focus</h2>
+                <a href="">SHOW ALL</a>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+                <figure>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67706c0000da84891a5f4520d2269bdd0c6ce9" alt="Study lofi playlist image">
+                        <button>
+                            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2839 11.134C17.9506 11.5189 17.9506 12.4811 17.2839 12.866L6.71601 18.9674C6.04934 19.3523 5.21601 18.8712 5.21601 18.1014L5.21601 5.8986C5.21601 5.1288 6.04934 4.64768 6.71601 5.03258L17.2839 11.134Z" fill="#000000"></path> </g></svg>
+                        </button>
+                    </div>
+                    <figcaption>Study lofi 📚</figcaption>
+                    <p>A daily selection of chill beats - perfect to help you relax & study 📚</p>
+                </figure>
+            </section>
+        </main>
+    </body>
+</html>
